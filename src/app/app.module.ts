@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AngTestComponent} from '../ang-test/ang-test.component';
+import {CostPositionComponent} from '../cost-position/cost-position.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AngTestComponent
+    CostPositionComponent
   ],
   imports: [
     BrowserModule,
