@@ -1,0 +1,13 @@
+<div *ngFor="let position of positions">
+
+  <div *ngIf="position != null">
+  <p [id]="pIdCSS[positions.indexOf(position)]">
+    Kosten: {{position.price}}; Verwendungszweck: {{position.purpose}} <br>
+  </p>
+  <button (click)="deletePosition(position)">Lösche diese Position</button>
+    <button (click)="changeStatus(position)">Als {{statusOpposit[positions.indexOf(position)]}} markieren</button>
+  </div>
+</div>
+<div *ngIf="emptyState">
+  <h4>Lieder sind hier keine Positionen verzeichnet</h4>
+</div>
